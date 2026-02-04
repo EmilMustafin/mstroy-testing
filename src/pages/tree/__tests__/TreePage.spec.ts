@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
 import { describe, it, expect, beforeEach } from 'vitest';
 import { defineComponent } from 'vue';
-import App from '@/App.vue';
+import TreePage from '../ui/TreePage.vue';
 import type { VueWrapper } from '@vue/test-utils';
 
 // Mock TreeGrid компонент
@@ -16,11 +16,11 @@ const mockTreeGrid = defineComponent({
     template: '<div class="mock-tree-grid" data-testid="tree-grid-mock">Mock TreeGrid</div>',
 });
 
-describe('App', () => {
+describe('TreePage', () => {
     let wrapper: VueWrapper;
 
     beforeEach(() => {
-        wrapper = mount(App, {
+        wrapper = mount(TreePage, {
             global: {
                 components: {
                     TreeGrid: mockTreeGrid,

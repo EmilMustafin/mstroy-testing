@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import TreeGrid from './components/TreeGrid.vue';
-import type { TreeItem } from './utils/TreeStore';
+import TreeGrid from '@/widgets/tree-grid';
+import type { TreeItem } from '@/shared/lib/tree-store';
 
 const items: TreeItem[] = [
     { id: 1, parent: null, label: 'Айтем 1' },
