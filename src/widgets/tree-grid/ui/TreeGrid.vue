@@ -3,8 +3,8 @@ import { ModuleRegistry, AllCommunityModule } from 'ag-grid-community';
 import { AllEnterpriseModule } from 'ag-grid-enterprise';
 import { AgGridVue } from 'ag-grid-vue3';
 import { ref } from 'vue';
-import { TreeStore } from '../utils/TreeStore';
-import type { TreeItem } from '../utils/TreeStore';
+import { TreeStore } from '@/shared/lib/tree-store';
+import type { TreeItem } from '@/shared/lib/tree-store';
 import type {
     ColDef,
     GridReadyEvent,

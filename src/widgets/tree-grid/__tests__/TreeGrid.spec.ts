@@ -1,7 +1,7 @@
 import { mount, VueWrapper } from '@vue/test-utils';
 import { describe, it, expect, beforeEach } from 'vitest';
-import TreeGrid from '../TreeGrid.vue';
-import type { TreeItem } from '../../utils/TreeStore';
+import TreeGrid from '../ui/TreeGrid.vue';
+import type { TreeItem } from '@/shared/lib/tree-store';
 
 const mockAgGridVue = {
     name: 'AgGridVue',
