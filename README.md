@@ -1,5 +1,64 @@
-# Vue 3 + TypeScript + Vite
+# mstroy-testing
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Запуск проекта
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+1. Установите зависимости:
+   ```bash
+   npm install
+   ```
+
+2. Запуск дев-сервера с хот-релоадом:
+   ```bash
+   npm run dev
+   ```
+
+3. Сборка для продакшена:
+   ```bash
+   npm run build
+   ```
+
+4. Предпросмотр собранного проекта:
+   ```bash
+   npm run preview
+   ```
+
+### Полезные команды
+
+- Проверка типов:
+  ```bash
+  npm run type-check
+  ```
+- Линтинг:
+  ```bash
+  npm run lint
+  ```
+- Тесты:
+  ```bash
+  npm run test:unit
+  ```
+
+## Структура проекта
+
+```
+.
+├── public/                 # Статические файлы
+├── src/                    # Исходный код
+│   ├── app/                # Инициализация приложения, глобальные стили
+│   │   ├── main.ts          # Точка входа
+│   │   └── styles/          # Глобальные стили
+│   ├── pages/               # Страницы приложения
+│   ├── widgets/             # Крупные UI-блоки
+│   └── shared/              # Общие утилиты и компоненты
+├── index.html               # HTML-шаблон
+├── vite.config.ts           # Конфигурация Vite
+├── tsconfig*.json           # Конфигурация TypeScript
+└── package.json             # Скрипты и зависимости
+```
+
+## Стек
+
+- Vue 3
+- TypeScript
+- Vite
+- Vue Router
+- Tailwind CSS
